@@ -8,7 +8,9 @@ class RequestId
 
     public static function registerId()
     {
-        apache_note('UniqueRequestId', self::getId());
+        if (function_exists('apache_note')) {
+            apache_note('UniqueRequestId', self::getId());
+        }
     }
 
     public static function getId()
