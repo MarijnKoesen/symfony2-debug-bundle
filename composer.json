@@ -1,0 +1,13 @@
+{
+    "name": "marijnkoesen/symfony2-debug-bundle",
+    "description": "Debug bundle for Symfony2",
+    "authors": [
+        {
+            "name": "Marijn Koesen",
+            "email": "github@koesen.nl"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "MarijnKoesen\\DebugBundle": "src/" }
+    }
+}

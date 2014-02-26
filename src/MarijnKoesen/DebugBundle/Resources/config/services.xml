@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="marijnkoesen.debugbundle.querylogger.class">MarijnKoesen\DebugBundle\Library\QueryLogger</parameter>
+    </parameters>
+
+    <services>
+        <service id="marijnkoesen.debugbundle.querylogger" class="%marijnkoesen.debugbundle.querylogger.class%" public="false">
+            <argument>%marijn_koesen_debug.query_log.path%</argument>
+        </service>
+    </services>
+</container>
